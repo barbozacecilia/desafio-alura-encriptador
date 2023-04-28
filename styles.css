@@ -1,0 +1,74 @@
+main{ 
+    display: flex;
+}
+
+
+.main-container{
+    display:flex;
+}
+
+
+
+.body-container{
+    background-color: #E5E5E5;
+    padding:  40px 40px ;
+    font-family: 'Inter', sans-serif;
+}
+
+#logo-container{
+    height: 48px;
+    background-color: red;
+    position: absolute;
+    left: 0%;
+}
+
+.to-encrypt-container{
+    background-color: pink;
+    padding: 80px 1em 30px;
+    width: 65%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;ß    
+}
+
+.text-to-encrypt{
+    width: 30rem;
+    margin: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    border: none;
+    background-color: yellow;
+    display: block;
+}
+
+.botton-container{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    background-color: blue;
+    flex-direction: column;
+}
+
+.encrypt{
+    font-family: 'Inter', sans-serif;
+}
+
+.encrypted-container{
+    min-height: 90vh;
+    background-color:#FFFFFF;
+    border-radius: 15px;
+    border-color: #FFFFFF;
+    position: absolute;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 25%;
+    
+}
+
+.image-one{
+    width: 15em;
+    display: flex;
+    align-items: center;
+}
