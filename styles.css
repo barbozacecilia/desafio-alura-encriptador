@@ -28,7 +28,7 @@ main{
     width: 65%;
     min-height: 80vh;
     display: flex;
-    flex-direction: column;ß    
+    flex-direction: column;    
 }
 
 .text-to-encrypt{
@@ -39,6 +39,15 @@ main{
     border: none;
     background-color: yellow;
     display: block;
+}
+
+#attention-sign{
+    background-color: blueviolet;
+    font-family: 12px;
+}
+
+#attention-sign::before{
+    content: "⚠ ";
 }
 
 .botton-container{
