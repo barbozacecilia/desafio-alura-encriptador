@@ -1,3 +1,4 @@
+
 main{ 
     display: flex;
 }
@@ -42,20 +43,41 @@ main{
 }
 
 #attention-sign{
-    background-color: blueviolet;
     font-family: 12px;
+    color: #495057;
+    padding: 0.5rem;
 }
 
 #attention-sign::before{
-    content: "⚠ ";
+    content: url(images/vectorvector.svg);
+    margin-right: 0.5rem;
 }
 
-.botton-container{
+button{
+    padding: 24px;
+    gap: 8px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    width: 328px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.button-container{
     display: flex;
     flex-direction: row;
-    align-items:flex-start;
-    background-color: blue;
-    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button-encrypt{
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+.button-decrypt{
+    color: #0A3871;
 }
 
 .encrypt{
