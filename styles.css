@@ -83,28 +83,50 @@ button{
     color: #0A3871;
 }
 
-
 .encrypted-container{
-    min-height: 90vh;
-    background-color:#FFFFFF;
+    min-height: 85vh;
     border-radius: 15px;
-    border-color: #FFFFFF;
-    right: 40px;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
-    width: 20rem;
-    
+    position: absolute;
+    background-color:#FFFFFF;
+    border-color: #FFFFFF;
+    right: 40px;
+
 }
 
-.image-one{
+#encrypted-container{
+    width: 400px;
+    background-color:#FFFFFF;
+    border-color: #FFFFFF;
+}
+
+#encrypt{
+    width: 400px;
+    color: #495057;
+    text-align: center;
+    border: none;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#encrypt-text{
+    border: none;
+    display: flex;
+
+}
+
+
+/*.image-one{
     width: 15em;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
-}
+}*/
 
 .subtitle-img{
     font-weight: 700;
@@ -115,10 +137,23 @@ button{
     margin-bottom: 16px;
 }
 
-.encrypt{
+#subtitle-two{
+    font-weight: 400;
+    font-size: 16px;
     color: #495057;
+    line-height: 24px;
+}
+.button-copy-container{
+    width: 100%;
+}
+
+.button-copy{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
     text-align: center;
-    border: none;
 }
 
 .footer-container{

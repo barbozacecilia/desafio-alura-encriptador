@@ -19,7 +19,7 @@
     <main id="main-container">
         <section class="to-encrypt-container">
             
-                <textarea name="text" class="text-to-encrypt" id="" cols="30" rows="10">Ingrese el texto aqui</textarea>
+                <textarea name="text" class="text-to-encrypt" id="" cols="30" rows="10" maxlength="">Ingrese el texto aqui</textarea>
             
             <div class="botton-container">
                 <div class="warning-container">
@@ -27,21 +27,29 @@
                 </div>
                 
                 <div class="button-container">
-                    <button type="submit" class="button-encrypt">Encriptar</button>
-                    <button type="submit" class="button-decrypt">Desencriptar</button>
+                    <button type="submit" class="button-encrypt" onclick="buttonEncrypt()">Encriptar</button>
+                    <button type="submit" class="button-decrypt" onclick="buttonDecrypt()">Desencriptar</button>
                  </div>
             </div>
         </section>
 
-        <section class="encrypted-container" >
+        <section id="encrypted-container" class="encrypted-container" >
                 <img src="images/Munecoimage-one.svg" class="image-one" alt="imagen">
                 <p class="subtitle-img">Ningún mensaje fue encontrado</p>
-                <textarea name="text" class="encrypt" id="" cols="30" rows="10">Ingresa el texto que desees encriptar o desencriptar.</textarea>
+                <p class="subtitle-img" id="subtitle-two">Ingresa el texto que desees encriptar o desencriptar.</p>
         </section>
+        <div class="encrypted-container" id="encrypt" >
+            <textarea name="text" id="encrypt-text" cols="30" rows="25"></textarea>
+            <div class="button-copy-container">
+                <button type="submit" class="button-copy" onclick="buttonCopy()">Copiar</button>
+            </div>
+        </div>
+
     </main>
     
     <footer class="footer-container">
         <p>Desafio de Alura realizado por Cecilia</p>
     </footer>
 </body>
+<script src="JavaScript/main.js"></script>
 </html>
