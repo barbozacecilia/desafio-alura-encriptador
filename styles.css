@@ -1,30 +1,32 @@
 
-main{ 
+main{
     display: flex;
 }
 
-
-.main-container{
-    display:flex;
+p, body,button, .subtitle-img , textarea , #attention-sign{
+    font-family: 'Inter', sans-serif;
 }
-
-
+.main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
 
 .body-container{
     background-color: #E5E5E5;
     padding:  40px 40px ;
-    font-family: 'Inter', sans-serif;
 }
 
 #logo-container{
     height: 48px;
-    background-color: red;
+   /* background-color: red;*/
     position: absolute;
     left: 0%;
 }
 
 .to-encrypt-container{
-    background-color: pink;
+    /*background-color: pink;*/
     padding: 80px 1em 30px;
     width: 65%;
     min-height: 80vh;
@@ -33,19 +35,20 @@ main{
 }
 
 .text-to-encrypt{
-    width: 30rem;
     margin: 2rem;
-    font-family: 'Inter', sans-serif;
+    line-height: 48px;
     font-size: 32px;
     border: none;
     background-color: #FFFFFF;
     display: block;
+    color: #0A3871;
 }
 
 #attention-sign{
-    font-family: 12px;
     color: #495057;
     padding: 0.5rem;
+    font-size: 12px;
+    line-height: 18px;
 }
 
 #attention-sign::before{
@@ -80,21 +83,19 @@ button{
     color: #0A3871;
 }
 
-.encrypt{
-    font-family: 'Inter', sans-serif;
-}
 
 .encrypted-container{
     min-height: 90vh;
     background-color:#FFFFFF;
     border-radius: 15px;
     border-color: #FFFFFF;
-    position: absolute;
     right: 40px;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 1rem;
-    width: 25%;
+    width: 20rem;
     
 }
 
@@ -102,4 +103,46 @@ button{
     width: 15em;
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 }
+
+.subtitle-img{
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    line-height: 29px;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 16px;
+}
+
+.encrypt{
+    color: #495057;
+    text-align: center;
+    border: none;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+/*{@media only screen and (min-width: 768px) {
+    .buttons__container {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    body {
+        display: flex;
+        justify-content: none;
+        background-color: #f3f5fc;
+    }}*/
+
+
