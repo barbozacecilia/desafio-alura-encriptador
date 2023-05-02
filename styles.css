@@ -42,8 +42,13 @@ p, body,button, .subtitle-img , textarea , #attention-sign{
     background-color: #FFFFFF;
     display: block;
     color: #0A3871;
+    text-transform: lowercase;
 }
 
+::placeholder { color: #0A3871;}
+textarea:focus{
+        outline: none;
+    }
 #attention-sign{
     color: #495057;
     padding: 0.5rem;
@@ -62,6 +67,7 @@ button{
     border: 1px solid #0A3871;
     border-radius: 24px;
     width: 328px;
+    height: 67px;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
